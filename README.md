@@ -1,6 +1,17 @@
 # my-vim-setting
 Personal use vim setting for fast configuration when I have to create a vim environment on a new server. 
 
+## Usage
+First give the `setup.sh` script permission
+```shell
+chmod 755 setup.sh
+```
+Then run it
+```shell
+./setup.sh
+```
+
+
 ## Scheme
 
 The color scheme I use is [vim-code-dark-master](https://github.com/tomasiser/vim-code-dark). I have include all its source file and they would be copy to `~/.vim` once you run `./setup.sh`. 
