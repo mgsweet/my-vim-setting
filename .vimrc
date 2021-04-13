@@ -7,10 +7,12 @@ colorscheme codedark
 syntax enable	" enable syntax processing
 set tabstop=4   " number of visual spaces per TAB
 set softtabstop=4   " number of spaces in tab when editing
-" set expandtab       " tabs are spaces
+set expandtab       " tabs are spaces
 
 " UI setting
 set number              " show line numbers
+set smartcase
+set colorcolumn=100
 set showcmd             " show command in bottom bar
 set cursorline          " highlight current line
 filetype indent on	" load filetype-specific indent files
