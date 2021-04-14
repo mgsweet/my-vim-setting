@@ -13,8 +13,10 @@ set expandtab       " tabs are spaces
 set clipboard=unnamed
 set smartcase
 set showmatch           " highlight matching [{()}]
+let mapleader=","       " leader is comma
 
 " UI setting
+:set cursorcolumn 
 set number              " show line numbers
 set colorcolumn=100
 set showcmd             " show command in bottom bar
@@ -26,8 +28,8 @@ set lazyredraw          " redraw only when we need to.
 " Searching setting
 set incsearch           " search as characters are entered
 set hlsearch            " highlight matches
-" turn off search highlight (nh means no hlsearch)
-nnoremap nh :nohlsearch<CR>
+" turn off search highlight 
+nnoremap <leader><space> :nohlsearch<CR>
 
 " Folding
 set foldenable          " enable folding
