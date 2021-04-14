@@ -14,13 +14,6 @@ set clipboard=unnamed
 set smartcase
 set showmatch           " highlight matching [{()}]
 let mapleader=","       " leader is comma
-nnoremap x "_x
-nnoremap d "_d
-nnoremap D "_D
-vnoremap d "_d
-nnoremap <leader>x ""d
-nnoremap <leader>X ""D
-vnoremap <leader>x ""d
 
 " UI setting
 :set cursorcolumn 
@@ -54,6 +47,3 @@ inoremap ii <esc>
 " move to beginning/end of line
 nnoremap B ^
 nnoremap E $
-" $/^ doesn't do anything
-nnoremap $ <nop>
-nnoremap ^ <nop>
