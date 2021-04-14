@@ -51,4 +51,9 @@ set foldmethod=indent   " fold based on indent level
 nnoremap j gj
 nnoremap k gk
 inoremap ii <esc>
-
+" move to beginning/end of line
+nnoremap B ^
+nnoremap E $
+" $/^ doesn't do anything
+nnoremap $ <nop>
+nnoremap ^ <nop>
