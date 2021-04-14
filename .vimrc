@@ -14,6 +14,14 @@ set clipboard=unnamed
 set smartcase
 set showmatch           " highlight matching [{()}]
 let mapleader=","       " leader is comma
+nnoremap x "_x
+nnoremap X "_X
+nnoremap d "_d
+nnoremap D "_D
+vnoremap d "_d
+nnoremap <leader>d "*d
+nnoremap <leader>D "*D
+vnoremap <leader>d "*d
 
 " UI setting
 :set cursorcolumn 
