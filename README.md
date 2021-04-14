@@ -1,5 +1,5 @@
 # my-vim-setting
-Personal use vim setting for fast configuration when I have to create a vim environment on a new server. 
+Personal use vim setting for fast vim environment setup. 
 
 ## Usage
 First give the `setup.sh` script permission
@@ -32,3 +32,6 @@ vimtutor
 
 That's it! Do it multiple times:)
 
+# References
+
+[A Good Vimrc](https://dougblack.io/words/a-good-vimrc.html)
