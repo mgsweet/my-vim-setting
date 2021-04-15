@@ -7,6 +7,7 @@ colorscheme codedark
 syntax enable	" enable syntax processing
 set tabstop=4   " number of visual spaces per TAB
 set softtabstop=4   " number of spaces in tab when editing
+set shiftwidth=4
 set expandtab       " tabs are spaces
 
 " Editing setting
@@ -22,6 +23,11 @@ vnoremap d "_d
 nnoremap <leader>d "*d
 nnoremap <leader>D "*D
 vnoremap <leader>d "*d
+nnoremap <Tab> >>_
+nnoremap <S-Tab> <<_
+inoremap <S-Tab> <C-D>
+vnoremap <Tab> >gv
+vnoremap <S-Tab> <gv
 
 " UI setting
 :set cursorcolumn 
