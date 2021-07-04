@@ -22,6 +22,8 @@ The color scheme I use is [vim-code-dark-master](https://github.com/tomasiser/vi
 
  [endwise.vim](https://github.com/tpope/vim-endwise) (in Ruby, adds `end` after `if`, `do`, `def`, etc.)
 
+ [vim-airline](https://github.com/vim-airline/vim-airline)
+
 ## How to learn vim
 
 Enter the following command on your shell
