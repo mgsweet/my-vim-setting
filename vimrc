@@ -61,3 +61,7 @@ inoremap ii <esc>
 " move to beginning/end of line
 nnoremap B ^
 nnoremap E $
+
+" Thrift
+au BufRead,BufNewFile *.thrift set filetype=thrift
+au! Syntax thrift source ~/.vim/thrift.vim
