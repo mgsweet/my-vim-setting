@@ -1,6 +1,30 @@
 # my-vim-setting
 Personal use vim setting for fast vim environment setup. 
 
+## Pre-request
+
+### Neovim
+
+For mac
+
+```
+brew install neovim
+```
+
+For Linux
+
+```
+curl -LO https://github.com/neovim/neovim/releases/latest/download/nvim.appimage
+chmod u+x nvim.appimage
+./nvim.appimage
+```
+
+
+
+
+
+
+
 ## Usage
 First give the `setup.sh` script permission
 ```shell

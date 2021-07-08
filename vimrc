@@ -17,6 +17,7 @@ call plug#begin('~/.vim/plugged')
 Plug 'vim-airline/vim-airline'
 Plug 'tomasiser/vim-code-dark'
 Plug 'solarnz/thrift.vim'
+Plug 'gruvbox-community/gruvbox'
 call plug#end()
 
 " --------------- Settings ---------------
@@ -24,6 +25,7 @@ call plug#end()
 set t_Co=256
 set t_ut=
 colorscheme codedark
+" colorscheme gruvbox
 
 " Tab setting
 syntax enable	" enable syntax processing
