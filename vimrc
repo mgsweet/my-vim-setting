@@ -41,7 +41,7 @@ set lazyredraw          " redraw only when we need to.
 
 " Searching setting
 set incsearch           " search as characters are entered
-set hlsearch            " highlight matches
+set nohlsearch            " highlight matches
 " turn off search highlight 
 nnoremap <leader><space> :nohlsearch<CR>
 
@@ -65,3 +65,14 @@ nnoremap E $
 " Thrift
 au BufRead,BufNewFile *.thrift set filetype=thrift
 au! Syntax thrift source ~/.vim/thrift.vim
+
+" Specify a directory for plugins
+" - For Neovim: stdpath('data') . '/plugged'
+" - Avoid using standard Vim directory names like 'plugin'
+call plug#begin('~/.vim/plugged')
+
+Plug 'vim-airline/vim-airline'
+Plug 'tomasiser/vim-code-dark'
+Plug 'solarnz/thrift.vim'
+
+call plug#end()

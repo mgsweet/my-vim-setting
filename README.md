@@ -10,19 +10,19 @@ Then run it
 ```shell
 ./setup.sh
 ```
+## Plugin Manager
 
-
-## Scheme
-
-The color scheme I use is [vim-code-dark-master](https://github.com/tomasiser/vim-code-dark). I have include all its source file and they would be copy to `~/.vim` once you run `./setup.sh`. 
+[vim-plug](https://github.com/junegunn/vim-plug) is used as our vim plugin manager.
 
 ## Plugin
 
- [auto-pairs.vim](https://github.com/jiangmiao/auto-pairs) (inserts or deletes brackets, parens, quotes in pairs)
+[vim-code-dark-master](https://github.com/tomasiser/vim-code-dark) (vscode color scheme)
 
- [endwise.vim](https://github.com/tpope/vim-endwise) (in Ruby, adds `end` after `if`, `do`, `def`, etc.)
+[auto-pairs.vim](https://github.com/jiangmiao/auto-pairs) (inserts or deletes brackets, parens, quotes in pairs)
 
- [vim-airline](https://github.com/vim-airline/vim-airline)
+[endwise.vim](https://github.com/tpope/vim-endwise) (in Ruby, adds `end` after `if`, `do`, `def`, etc.)
+
+[vim-airline](https://github.com/vim-airline/vim-airline) (Lean & mean status/tabline for vim that's light as air)
 
 ## How to learn vim
 

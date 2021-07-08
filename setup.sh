@@ -1,7 +1,5 @@
 set -e
 cp vimrc ~/.vimrc 
-mkdir -p ~/.vim
-cp -R vim-airline/* ~/.vim/
-cp -R vim-code-dark/* ~/.vim/
-cp -R vim-thrift/* ~/.vim/
-cp -R plugin ~/.vim
+sh -c 'curl -fLo "${XDG_DATA_HOME:-$HOME/.local/share}"/nvim/site/autoload/plug.vim --create-dirs \
+       https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim'
+vim -es -u vimrc -i NONE -c "PlugInstall" -c "qa"
