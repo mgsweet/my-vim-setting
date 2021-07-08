@@ -1,5 +1,6 @@
 set -e
 cp vimrc ~/.vimrc 
-sh -c 'curl -fLo "${XDG_DATA_HOME:-$HOME/.local/share}"/nvim/site/autoload/plug.vim --create-dirs \
-       https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim'
+curl -fLo ~/.vim/autoload/plug.vim --create-dirs \
+    https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
+cp -R plugin/* ~/.vim/
 vim -es -u vimrc -i NONE -c "PlugInstall" -c "qa"

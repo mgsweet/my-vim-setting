@@ -1,3 +1,25 @@
+" --------------- Plugin Manager ---------------
+" Install vim-plug if not found
+if empty(glob('~/.vim/autoload/plug.vim'))
+  silent !curl -fLo ~/.vim/autoload/plug.vim --create-dirs
+    \ https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
+endif
+
+" Run PlugInstall if there are missing plugins
+autocmd VimEnter * if len(filter(values(g:plugs), '!isdirectory(v:val.dir)'))
+  \| PlugInstall --sync | source $MYVIMRC
+\| endif
+
+" Specify a directory for plugins
+" - For Neovim: stdpath('data') . '/plugged'
+" - Avoid using standard Vim directory names like 'plugin'
+call plug#begin('~/.vim/plugged')
+Plug 'vim-airline/vim-airline'
+Plug 'tomasiser/vim-code-dark'
+Plug 'solarnz/thrift.vim'
+call plug#end()
+
+" --------------- Settings ---------------
 " Scheme setting
 set t_Co=256
 set t_ut=
@@ -65,14 +87,3 @@ nnoremap E $
 " Thrift
 au BufRead,BufNewFile *.thrift set filetype=thrift
 au! Syntax thrift source ~/.vim/thrift.vim
-
-" Specify a directory for plugins
-" - For Neovim: stdpath('data') . '/plugged'
-" - Avoid using standard Vim directory names like 'plugin'
-call plug#begin('~/.vim/plugged')
-
-Plug 'vim-airline/vim-airline'
-Plug 'tomasiser/vim-code-dark'
-Plug 'solarnz/thrift.vim'
-
-call plug#end()
