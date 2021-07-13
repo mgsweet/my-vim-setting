@@ -19,13 +19,10 @@ chmod u+x nvim.appimage
 ./nvim.appimage
 ```
 
-
-
-
-
-
+Aliasing vim to nvim permanently, add `alias vim = "nvim"` to `~/.zshrc` or `~/.bashrc`.
 
 ## Usage
+
 First give the `setup.sh` script permission
 ```shell
 chmod 755 setup.sh

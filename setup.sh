@@ -1,4 +1,7 @@
 set -e
+# install nodejs
+curl -sL install-node.now.sh/lts | bash
+# do the vim stuff
 cp vimrc ~/.vimrc
 mkdir -p ~/.config/nvim/
 cp init.vim ~/.config/nvim/init.vim
